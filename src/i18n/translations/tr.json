@@ -1,0 +1,11 @@
+{
+  "profile.topcard.connections": "bağlantı",
+  "profile.topcard.contactInfo": "İletişim bilgileri",
+  "profile.experience.title": "Deneyim",
+  "profile.education.title": "Eğitim",
+  "profile.skillsEndorsements.title": "Yetenek ve Onaylar",
+  "profile.skillsEndorsementSingle": "<strong>{fullName}<strong> bu yetenek için onay verdi",
+  "profile.skillsEndorsementMultiple": "<strong>{fullName} and {count} connection<strong> has given an endorsement for this skill",
+  "profile.skillEndorsementHighlySkilled": "Bu konuda oldukça yetenekli <strong>{fullName} ve {count} diğer kişi tarafından onaylandı</strong>",
+  "profile.skillEndorsementColleagues": "<strong>{firstName} adlı kullanıcı {colleagues} kurumundaki {count} iş arkadaşı tarafından onaylandı"
+}

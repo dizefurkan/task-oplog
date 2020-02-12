@@ -1,0 +1,159 @@
+{
+  "backgroundImage": "https://static-exp1.licdn.com/sc/h/5qi38njir9vsm46ync2qjvrrs",
+  "user": {
+    "profilePicture": "https://media-exp1.licdn.com/dms/image/C5603AQGh5BHXkKSXmg/profile-displayphoto-shrink_200_200/0?e=1586995200&v=beta&t=t6NQyZHXvsu8E6MG0OaXLNivo6o3SPeXZ43qeazNNf8",
+    "fullName": "Said Furkan Dize",
+    "headline": "Software Development Team Lead at OPLOG Operational Logistics",
+    "address": "Seattle, Washington",
+    "connections": 412,
+    "showEducation": true
+  },
+  "company": [
+    {
+      "companyId": "1",
+      "companyName": "OPLOG Operational Logistics",
+      "totalTime": "1yr 11 mos",
+      "image": "https://dummyimage.com/600x400/000/fff",
+      "experience": [
+        {
+          "startDate": "01.12.2018",
+          "endDate": "",
+          "currently": true,
+          "role": "Software Development Team Lead",
+          "location": "Ankara, Turkey"
+        },
+        {
+          "startDate": "01.11.2017",
+          "endDate": "01.12.2018",
+          "currently": false,
+          "location": "Ankara, Turkey",
+          "role": "Software Developer"
+        }
+      ]
+    },
+    {
+      "companyId": "2",
+      "companyName": "Microsoft",
+      "totalTime": "3yr 11 mos",
+      "image": "https://dummyimage.com/600x400/000/fff",
+      "experience": [
+        {
+          "startDate": "01.01.2016",
+          "endDate": "01.07.2017",
+          "currently": false,
+          "location": "Redmond, WA",
+          "role": "Software Development Engineer",
+          "description": "Microsoft Azure IoT - worked as a full-stack software developer on Microsoft IoT Central, an end-to-end IoT SaaS solution."
+        },
+        {
+          "startDate": "01.09.2013",
+          "endDate": "01.01.2016",
+          "currently": false,
+          "location": "Redmond, WA",
+          "role": "Software Development Engineer",
+          "description": "Microsoft Azure Compute - worked as an SDET and SDE, developed a highly scalable and reliable usage service which emits usage for Azure compute resources."
+        }
+      ]
+    },
+    {
+      "companyId": "3",
+      "companyName": "Anvato",
+      "image": "https://dummyimage.com/600x400/000/fff",
+      "experience": [
+        {
+          "startDate": "01.04.2012",
+          "endDate": "01.01.2013",
+          "currently": false,
+          "location": "Ankara, Turkey",
+          "role": "R&D Engineer",
+          "description": "TRECVID – Media Event Detection Task (MED)\nContent-based analysis and retrieval from digital video"
+        }
+      ]
+    },
+    {
+      "companyId": "4",
+      "companyName": "Bilkent University",
+      "image": "https://dummyimage.com/600x400/000/fff",
+      "experience": [
+        {
+          "startDate": "01.09.2010",
+          "endDate": "01.09.2013",
+          "currently": false,
+          "location": "Ankara, Turkey",
+          "role": "Research and Teaching Assistantship",
+          "description": "Department of Computer Science"
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "Bilkent University",
+      "image": "https://dummyimage.com/100x100/000/fff",
+      "degree": "Master's Degree",
+      "field": "Computer Science",
+      "grade": "3.58/4.00",
+      "startDate": "01.01.2010",
+      "endDate": "01.01.2013",
+      "location": "",
+      "description": "MSc thesis: Segmentation Based Ottoman Text And Matching Based Kufic Image Analysis, Hande Adiguzel M.S. in Computer Engineering Supervisor: Asst. Prof. Dr. Pınar Duygulu Sahin, July, 2013"
+    },
+    {
+      "school": "Bilkent University",
+      "image": "https://dummyimage.com/600x400/000/fff",
+      "degree": "Bachelor's degree",
+      "field": "Computer Science",
+      "grade": "3.09/4.00",
+      "startDate": "2006",
+      "endDate": "2010",
+      "location": "",
+      "description": ""
+    }
+  ],
+  "skills": [
+    {
+      "name": "Java",
+      "endorsements": [
+        {
+          "fullName": "Hayrettin Erdem",
+          "headline": "Software Engineer | Big Data | Machine Learning",
+          "image": "https://dummyimage.com/100x100/000/fff",
+          "endorsementType": 1
+        },
+        {
+          "fullName": "H. Altay Güvenir",
+          "headline": "Professor of Computer Engineering at Bilkent University",
+          "image": "https://dummyimage.com/100x100/000/fff",
+          "endorsementType": 1
+        },
+        {
+          "fullName": "",
+          "headline": "Software Engineer | Big Data | Machine Learning",
+          "image": "https://dummyimage.com/100x100/000/fff",
+          "endorsementType": 2
+        },
+        {
+          "fullName": "",
+          "headline": "Software Engineer | Big Data | Machine Learning",
+          "image": "https://dummyimage.com/100x100/000/fff",
+          "endorsementType": 0
+        }
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "endorsements": [
+        {
+          "fullName": "Berk Gökden",
+          "headline": "Software Engineer | Big Data | Machine Learning",
+          "image": "https://dummyimage.com/100x100/000/fff",
+          "endorsementType": 0
+        }
+      ]
+    },
+    {
+      "name": "Html",
+      "endorsements": []
+    }
+  ]
+}
