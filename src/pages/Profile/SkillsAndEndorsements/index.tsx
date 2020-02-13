@@ -81,7 +81,7 @@ const renderHighlySkilledEndorsements = (data: []) => {
   return (
     <S.EndorsementWrapper width={'50%'}>
       <S.ImageWrapper>
-        <img src={dataFirst.image} />
+        <img src={dataFirst.image} alt="" />
       </S.ImageWrapper>
       <S.EndorsementLinkWrapper>
         <S.EndorsementLink>
@@ -99,7 +99,6 @@ const renderHighlySkilledEndorsements = (data: []) => {
 };
 
 const renderColleaguesEndorsements = (data: any) => {
-  console.log(data)
   return null;
 }
 
