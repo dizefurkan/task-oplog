@@ -163,19 +163,67 @@
       "content": "In this study, we address the problem of matching patterns in Kufic calligraphy images. Being used as a decorative element, Kufic images have been designed in a way that makes it difficult to be read by non-experts. Therefore, available methods for handwriting recognition are not easily applicable to the recognition of Kufic patterns. In this study, we propose two new methods for Kufic pattern matching. The first method approximates the contours of connected components into lines and then utilizes chain code representation. Sequence matching techniques with a penalty for gaps are exploited for handling the variations between different instances of sub-patterns. In the second method, skeletons of connected components are represented as a graph where junction and end points are considered as nodes. Graph isomorphism techniques are then relaxed for partial graph matching. Methods are evaluated over a collection of 270 square Kufic images with 8,941 sub-patterns. Experimental results indicate that, besides retrieval and indexing of known patterns, our method also allows the discovery of new patterns."
     },
     {
-      "type": 1,
+      "type": 0,
       "name": "A Hybrid Approach for Line Segmentation in Handwritten Documents",
       "content": "This paper presents an approach for text line segmentation which combines connected component based and projection based information to take advantage of aspects of both methods. The proposed system finds baselines of each connected component. Lines are detected by grouping baselines of connected components belonging to each line by projection information. Components are assigned to lines according to different distance metrics with respect to their size. This study is one of the rare studies that apply line segmentation to Ottoman documents. Further, it proposes a new method, Fourier curve fitting, to detect the peaks in a projection profile. The algorithm is demonstrated on different printed and handwritten Ottoman datasets. Results show that the method manages to segment lines both from printed and handwritten documents under different writing conditions at least with 92% accuracy."
+    }
+  ],
+  "interests": [
+    {
+      "id": "1",
+      "type": 0,
+      "logo": "https://media-exp1.licdn.com/dms/image/C560BAQHoVB1ZGdeMiQ/company-logo_100_100/0?e=1589414400&v=beta&t=VsTkIAmI1CTVXiFMMO8zm-xRs7Qs6cPUtZaynbh40AI",
+      "name": "UX'minimal",
+      "followerCount": "1.207",
+      "url": "www.google.com"
     },
     {
-      "type": 3,
-      "name": "A Hybrid Approach for Line Segmentation in Handwritten Documents",
-      "content": "This paper presents an approach for text line segmentation which combines connected component based and projection based information to take advantage of aspects of both methods. The proposed system finds baselines of each connected component. Lines are detected by grouping baselines of connected components belonging to each line by projection information. Components are assigned to lines according to different distance metrics with respect to their size. This study is one of the rare studies that apply line segmentation to Ottoman documents. Further, it proposes a new method, Fourier curve fitting, to detect the peaks in a projection profile. The algorithm is demonstrated on different printed and handwritten Ottoman datasets. Results show that the method manages to segment lines both from printed and handwritten documents under different writing conditions at least with 92% accuracy."
+      "id": "2",
+      "type": 0,
+      "logo": "https://media-exp1.licdn.com/dms/image/C4D0BAQEko6uLz7XylA/company-logo_100_100/0?e=1589414400&v=beta&t=bkDKk9-bGgLG4Jd4krY0qkxqV4JVAhVOIiznZjpQ4gk",
+      "name": "Microsoft",
+      "followerCount": "1.207",
+      "url": "www.google.com"
     },
     {
+      "id": "3",
+      "type": 0,
+      "logo": "https://media-exp1.licdn.com/dms/image/C4D0BAQHArUWRLExvig/company-logo_100_100/0?e=1589414400&v=beta&t=YRMreoPs6KlMtHvGkKFx8J2AjTFw2_6kjyMVbkRSuTw",
+      "name": "OPLOG Operasyonel Lojistik",
+      "followerCount": "1.817",
+      "url": "www.google.com"
+    },
+    {
+      "id": "4",
       "type": 1,
-      "name": "A Hybrid Approach for Line Segmentation in Handwritten Documents",
-      "content": "This paper presents an approach for text line segmentation which combines connected component based and projection based information to take advantage of aspects of both methods. The proposed system finds baselines of each connected component. Lines are detected by grouping baselines of connected components belonging to each line by projection information. Components are assigned to lines according to different distance metrics with respect to their size. This study is one of the rare studies that apply line segmentation to Ottoman documents. Further, it proposes a new method, Fourier curve fitting, to detect the peaks in a projection profile. The algorithm is demonstrated on different printed and handwritten Ottoman datasets. Results show that the method manages to segment lines both from printed and handwritten documents under different writing conditions at least with 92% accuracy."
+      "logo": "https://media-exp1.licdn.com/dms/image/C4D0BAQFmBOOliUpQ7w/company-logo_100_100/0?e=1589414400&v=beta&t=jL4AMRimrNtzcvRTwoR5rsRnt-bSvP8uOi1LSHJcNGs",
+      "name": "Bilkent Üniversitesi",
+      "followerCount": "72.247",
+      "url": "www.google.com"
+    },
+    {
+      "id": "5",
+      "type": 0,
+      "logo": "https://media-exp1.licdn.com/dms/image/C510BAQFhoPb09cFNqg/company-logo_100_100/0?e=1589414400&v=beta&t=EbH6_I0jxU7wn1heh8SG4LmHss37e3r784qEr2KJG-I",
+      "name": "Anvato",
+      "followerCount": "3.663",
+      "url": "www.google.com"
+    },
+    {
+      "id": "6",
+      "type": 0,
+      "logo": "https://media-exp1.licdn.com/dms/image/C560BAQHoVB1ZGdeMiQ/company-logo_100_100/0?e=1589414400&v=beta&t=VsTkIAmI1CTVXiFMMO8zm-xRs7Qs6cPUtZaynbh40AI",
+      "name": "UX'minimal",
+      "followerCount": "1.207",
+      "url": "www.google.com"
+    },
+    {
+      "id": "7",
+      "type": 0,
+      "logo": "https://media-exp1.licdn.com/dms/image/C5107AQHtNSCCevnyPw/group-logo_image-shrink_200x200/0?e=1581624000&v=beta&t=AqSkfRISM48kL2nxKhmsu0WIB5nL0yHszJnh10kU6IQ",
+      "name": "Microsoft Azure Platform",
+      "followerCount": "2.358",
+      "url": "www.google.com"
     }
   ]
 }

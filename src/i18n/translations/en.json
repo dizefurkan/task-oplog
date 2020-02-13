@@ -8,5 +8,9 @@
   "profile.skillsEndorsementMultiple": "<strong>{fullName} and {count} connection</strong> has given an endorsement for this skill",
   "profile.skillEndorsementHighlySkilled": "Endorsed by <strong>{fullName} and {count} others who are highly skilled at this</strong>",
   "profile.skillEndorsementColleagues": "Endorsed by <strong>{count} of {fullName} colleagues at {colleagues}</strong>",
-  "profile.accomplishments.title": "Accomplishments"
+  "profile.accomplishments.title": "Accomplishments",
+  "profile.interests.title": "Interests",
+  "profile.interests.followers": "followers",
+  "profile.interests.members": "members",
+  "profile.interests.seeAll": "See All"
 }

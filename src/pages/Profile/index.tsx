@@ -4,6 +4,7 @@ import TopCard from './TopCard';
 import ExperienceAndEducation from './ExperienceAndEducation';
 import SkillsAndEndorsements from './SkillsAndEndorsements';
 import Accomplishments from './Accomplishments';
+import Interests from './Interests';
 
 import Container from 'src/themes/Container';
 
@@ -13,6 +14,7 @@ const Profile = () => (
     <ExperienceAndEducation />
     <SkillsAndEndorsements />
     <Accomplishments />
+    <Interests />
   </Container>
 );
 
