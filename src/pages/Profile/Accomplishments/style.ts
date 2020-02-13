@@ -57,13 +57,15 @@ export const AccomplishmentsNames = styled.ul`
   margin: 0;
   padding-right: 48px;
   margin-bottom: 16px;
+  word-wrap: break-word;
+  word-break: break-word;
 `;
 
 export const AccomplishName = styled.li`
   line-height: 2.4rem;
   font-size: 1.4rem;
   position: relative;
-  display: inline-block;
+  display: inline;
   position: relative;
   padding-right: 10px;
   margin-right: 10px;
@@ -72,10 +74,11 @@ export const AccomplishName = styled.li`
     content: '';
     width: 3px;
     height: 3px;
+    border-radius: 50%;
     position: absolute;
     background-color: #000;
     top: 50%;
     transform: translateY(-50%);
-    right: 0;
+    right: -1.5px;
   }
 `;
