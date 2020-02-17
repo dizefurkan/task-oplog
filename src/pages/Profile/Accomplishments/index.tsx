@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, useIntl } from 'react-intl';
 import Card, { CardContainer } from 'src/themes/Card';
 
 import { groupBy } from 'src/utils';
@@ -7,18 +7,22 @@ import { groupBy } from 'src/utils';
 import MockData from 'src/pages/Profile/mock-data.json';
 import * as S from './style';
 
-const types: any = {
-  0: 'Yayın',
-  1: 'Patent',
-  2: 'Kurs',
-  3: 'Proje',
-  4: 'Onur ve Ödül',
-  5: 'Sınav Puanı',
-  6: 'Dil',
-  7: 'Organizasyon',
-};
+const types: any = [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+];
+
+const hasType = (type: number) =>
+  !isNaN(types.find((item: any) => item === type))
 
 const Accomplishments = () => {
+  const { formatMessage: f } = useIntl();
   const [isContentCollapsed, setContentCollapsed] = useState(false);
   const groupedAccomplishments: any[] = Object.values(groupBy(MockData.accomplishments, 'type'));
   const groupedAccomplishmentsLength = groupedAccomplishments.length;
@@ -33,7 +37,12 @@ const Accomplishments = () => {
         </S.Title>
       </CardContainer>
       {groupedAccomplishments.map((item: any, index: number) => {
-        const publicationTitle: any = types[item[0].type];
+        const type = item[0].type;
+        const typeTextId = 'profile.accomplishments.type';
+        const publicationTitle =
+          hasType(type)
+            ? f({ id: typeTextId + type })
+            : '';
         const count = item.length;
         const isLastChild = index === groupedAccomplishmentsLength - 1;
         // TODO Show Detail
