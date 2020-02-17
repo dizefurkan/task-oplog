@@ -12,5 +12,14 @@
   "profile.interests.title": "İlgi Alanları",
   "profile.interests.followers": "takipçi",
   "profile.interests.members": "üye",
-  "profile.interests.seeAll": "Tümünü Gör"
+  "profile.interests.seeAll": "Tümünü Gör",
+  "login.heading": "Tekrar Hoş Geldiniz",
+  "login.subheading": "Bir sonraki fırsatınızı kaçırmayın. Profesyonel dünyanızından haberdar olmak için oturum açın.",
+  "login.form.email": "E-posta veya Telefon",
+  "login.form.password": "Şifre",
+  "login.form.passwordShow": "Göster",
+  "login.form.passwordHide": "Gizle",
+  "login.form.button": "Oturum açın",
+  "login.form.error.email": "Lütfen e-posta adresinizi veya telefon numaranızı girin",
+  "login.form.error.password": "Lütfen bir şifre girin."
 }

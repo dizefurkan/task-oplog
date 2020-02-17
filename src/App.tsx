@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+} from 'react-router-dom';
 import { IntlProvider } from 'react-intl';
 import locale_en from "./i18n/translations/en.json";
 import locale_tr from "./i18n/translations/tr.json";
+import Login from './pages/Login';
 import Profile from './pages/Profile';
 import './App.css';
 
@@ -9,29 +15,32 @@ const languages = [
   { key: 'en', label: 'English' },
   { key: 'tr', label: 'Türkçe' }
 ];
-
-const data:any = {
+const locales:any = {
   'tr': locale_tr,
   'en': locale_en
 };
 const defaultLanguage = 'en';
 
-
 const App = () => {
-  const [locale, setLocale] = useState(defaultLanguage);
+  const [localeKey, setLocaleKey] = useState(defaultLanguage);
   const handleChange = (event:any) => {
     const { value } = event.target;
-    setLocale(value);
+    setLocaleKey(value);
   };
 
   return (
-    <IntlProvider locale={locale} messages={data[locale]}>
-      <select onChange={handleChange} defaultValue={locale}>
+    <IntlProvider locale={localeKey} messages={locales[localeKey]}>
+      <select onChange={handleChange} defaultValue={localeKey}>
        {languages.map((language, index) => (
           <option key={`${index}${language.key}`}value={language.key}>{language.label}</option>
         ))}
       </select>
-      <Profile />
+      <Router>
+        <Switch>
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/profile" component={Profile} />
+        </Switch>
+      </Router>
     </IntlProvider>
   );
 }

@@ -12,5 +12,14 @@
   "profile.interests.title": "Interests",
   "profile.interests.followers": "followers",
   "profile.interests.members": "members",
-  "profile.interests.seeAll": "See All"
+  "profile.interests.seeAll": "See All",
+  "login.heading": "Welcome Back",
+  "login.subheading": "Don't miss your next opportunity. Sign in to stay updated on your professional world.",
+  "login.form.email": "Email or Phone",
+  "login.form.password": "Password",
+  "login.form.passwordShow": "Show",
+  "login.form.passwordHide": "Hide",
+  "login.form.button": "Sign in",
+  "login.form.error.email": "Please enter an email address or phone number",
+  "login.form.error.password": "Please enter a password."
 }
