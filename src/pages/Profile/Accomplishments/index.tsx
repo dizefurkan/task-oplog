@@ -38,12 +38,12 @@ const Accomplishments = () => {
         const isLastChild = index === groupedAccomplishmentsLength - 1;
         // TODO Show Detail
         return (
-          <S.Panel collapsed={isContentCollapsed}>
+          <S.Panel collapsed={isContentCollapsed} key={`${index}`}>
             <S.Count>{count}</S.Count>
             <S.Content isLastChild={isLastChild}>
               <S.PublicationTitle>{publicationTitle}</S.PublicationTitle>
               <S.AccomplishmentsNames>
-                {item.map((accomplish: any) => <S.AccomplishName>{accomplish.name}</S.AccomplishName>)}
+                {item.map((accomplish: any, index: number) => <S.AccomplishName key={`${index}`}>{accomplish.name}</S.AccomplishName>)}
               </S.AccomplishmentsNames>
             </S.Content>
           </S.Panel>

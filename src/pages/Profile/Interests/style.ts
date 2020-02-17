@@ -47,7 +47,7 @@ export const Content = styled.div`
   flex-direction: column;
   min-height: 60px;
 `;
-export const Name = styled.a`
+export const Name = styled.span`
   font-size: 1.6rem;
   line-height: 1.5;
   font-weight: 600;
