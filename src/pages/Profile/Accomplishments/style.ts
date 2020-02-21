@@ -9,16 +9,11 @@ export const Title = styled.h2`
   margin-bottom: 16px;
 `;
 
-type TPanel = {
-  collapsed: boolean
-}
-
-export const Panel = styled.section<TPanel>`
+export const Panel = styled.section`
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  background-color: ${({collapsed}) => collapsed ? '#f3f6f8' : '#fff'}
-  ${({collapsed}) => collapsed && `border-top: 1px solid rgba(0,0,0,.15);`}
+  background-color: #fff;
 `;
 
 export const Count = styled.h3`

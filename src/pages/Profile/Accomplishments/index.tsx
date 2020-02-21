@@ -7,23 +7,43 @@ import { groupBy } from 'src/utils';
 import MockData from 'src/pages/Profile/mock-data.json';
 import * as S from './style';
 
-const types: any = [
-  0,
-  1,
-  2,
-  3,
-  4,
-  5,
-  6,
-  7,
-];
+enum AccomplishmentType {
+  Publication,
+  Patent,
+  Course,
+  Project,
+  HonorAndAward,
+  TestScore,
+  Language,
+  Organization
+};
 
-const hasType = (type: number) =>
-  !isNaN(types.find((item: any) => item === type))
+const Accomplishment = (props: any) => {
+  const { data, isLastChild } = props;
+  const type = data[0].type;
+  const accomplishmentTitleKey =
+    `profile.accomplishments.type${AccomplishmentType[type]}`;
+  const publicationTitle = '';
+  const count = data.length;
+  // TODO Show Detail
+
+  return (
+    <S.Panel>
+      <S.Count>{count}</S.Count>
+      <S.Content isLastChild={isLastChild}>
+        <S.PublicationTitle>{publicationTitle}</S.PublicationTitle>
+        <S.AccomplishmentsNames>
+          {data.map((accomplish: { name: string }, index: number) =>
+            <S.AccomplishName key={index}>{accomplish.name}</S.AccomplishName>)
+          }
+        </S.AccomplishmentsNames>
+      </S.Content>
+    </S.Panel>
+  );
+}
 
 const Accomplishments = () => {
   const { formatMessage: f } = useIntl();
-  const [isContentCollapsed, setContentCollapsed] = useState(false);
   const groupedAccomplishments: any[] = Object.values(groupBy(MockData.accomplishments, 'type'));
   const groupedAccomplishmentsLength = groupedAccomplishments.length;
 
@@ -36,27 +56,16 @@ const Accomplishments = () => {
           />
         </S.Title>
       </CardContainer>
-      {groupedAccomplishments.map((item: any, index: number) => {
-        const type = item[0].type;
-        const typeTextId = 'profile.accomplishments.type';
-        const publicationTitle =
-          hasType(type)
-            ? f({ id: typeTextId + type })
-            : '';
-        const count = item.length;
+      {groupedAccomplishments.map((item: [], index: number) => {
         const isLastChild = index === groupedAccomplishmentsLength - 1;
-        // TODO Show Detail
+
         return (
-          <S.Panel collapsed={isContentCollapsed} key={`${index}`}>
-            <S.Count>{count}</S.Count>
-            <S.Content isLastChild={isLastChild}>
-              <S.PublicationTitle>{publicationTitle}</S.PublicationTitle>
-              <S.AccomplishmentsNames>
-                {item.map((accomplish: any, index: number) => <S.AccomplishName key={`${index}`}>{accomplish.name}</S.AccomplishName>)}
-              </S.AccomplishmentsNames>
-            </S.Content>
-          </S.Panel>
-        )
+          <Accomplishment
+            key={index}
+            data={item}
+            isLastChild={isLastChild}
+          />
+        );
       })}
     </Card>
   );
