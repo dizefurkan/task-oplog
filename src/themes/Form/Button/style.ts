@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 type TButton = {
-  margin?: string
-}
+  styles: any
+};
 
 export default {
   Button: styled.button<TButton>`
@@ -10,7 +10,6 @@ export default {
     display: inline-block;
     padding: 0 24px;
     height: 52px;
-    margin: ${({ margin }) => margin || 0};
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 52px;
@@ -23,6 +22,7 @@ export default {
     color: #fff;
     cursor: pointer;
     overflow: hidden;
+    ...${({ styles }) => styles};
 
     &:hover {
       background-color: #006097;

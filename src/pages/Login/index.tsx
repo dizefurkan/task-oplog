@@ -124,7 +124,7 @@ const Login = () => {
           </S.Block>
           <Button
             styles={{
-              margin: '8px 0 0 0'
+              margin: '8px 0 0 0',
             }}
             text={f({ id: 'login.form.button' })}
           />

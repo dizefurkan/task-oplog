@@ -2,15 +2,15 @@ import React from 'react';
 import S from './style';
 
 type TButton = {
-  callback?: any,
+  callback?: () => void,
   text: string,
-  styles?: any,
+  styles?: object,
 }
 
-const Button = ({ callback = () => {}, text, styles }: TButton) => {
+const Button = ({ callback = () => {}, text, styles = {} }: TButton) => {
   return (
     <S.Button
-      {...styles}
+      styles={styles}
       onClick={callback}
     >
       {text}
