@@ -5,11 +5,12 @@ import {
   Switch,
 } from 'react-router-dom';
 import { IntlProvider } from 'react-intl';
+import { ThemeProvider } from 'styled-components';
+import GlobalStyle from './globalStyle';
 import locale_en from "./i18n/translations/en.json";
 import locale_tr from "./i18n/translations/tr.json";
 import Login from './pages/Login';
 import Profile from './pages/Profile';
-import './App.css';
 
 const languages = [
   { key: 'en', label: 'English' },
@@ -30,17 +31,20 @@ const App = () => {
 
   return (
     <IntlProvider locale={localeKey} messages={locales[localeKey]}>
-      <select onChange={handleChange} defaultValue={localeKey}>
-       {languages.map((language, index) => (
-          <option key={`${index}${language.key}`}value={language.key}>{language.label}</option>
-        ))}
-      </select>
-      <Router>
-        <Switch>
-          <Route exact path="/login" component={Login} />
-          <Route exact path="/profile" component={Profile} />
-        </Switch>
-      </Router>
+      <ThemeProvider theme={{}}>
+        <select onChange={handleChange} defaultValue={localeKey}>
+         {languages.map((language, index) => (
+            <option key={`${index}${language.key}`}value={language.key}>{language.label}</option>
+          ))}
+        </select>
+        <Router>
+          <Switch>
+            <Route exact path="/login" component={Login} />
+            <Route exact path="/profile" component={Profile} />
+          </Switch>
+        </Router>
+        <GlobalStyle />
+      </ThemeProvider>
     </IntlProvider>
   );
 }
