@@ -19,11 +19,12 @@ enum AccomplishmentType {
 };
 
 const Accomplishment = (props: any) => {
+  const { formatMessage: f } = useIntl();
   const { data, isLastChild } = props;
   const type = data[0].type;
-  const accomplishmentTitleKey =
-    `profile.accomplishments.type${AccomplishmentType[type]}`;
-  const publicationTitle = '';
+  const publicationTitle: string = AccomplishmentType[type]
+    ? f({ id: `profile.accomplishments.type${type}` })
+    : '';
   const count = data.length;
   // TODO Show Detail
 
@@ -43,7 +44,6 @@ const Accomplishment = (props: any) => {
 }
 
 const Accomplishments = () => {
-  const { formatMessage: f } = useIntl();
   const groupedAccomplishments: any[] = Object.values(groupBy(MockData.accomplishments, 'type'));
   const groupedAccomplishmentsLength = groupedAccomplishments.length;
 
