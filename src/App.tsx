@@ -11,11 +11,9 @@ import locale_en from "./i18n/translations/en.json";
 import locale_tr from "./i18n/translations/tr.json";
 import Login from './pages/Login';
 import Profile from './pages/Profile';
+import Header from 'src/components/Header';
 
-const languages = [
-  { key: 'en', label: 'English' },
-  { key: 'tr', label: 'Türkçe' }
-];
+
 const locales:any = {
   'tr': locale_tr,
   'en': locale_en
@@ -32,12 +30,8 @@ const App = () => {
   return (
     <IntlProvider locale={localeKey} messages={locales[localeKey]}>
       <ThemeProvider theme={{}}>
-        <select onChange={handleChange} defaultValue={localeKey}>
-         {languages.map((language, index) => (
-            <option key={`${index}${language.key}`}value={language.key}>{language.label}</option>
-          ))}
-        </select>
         <Router>
+          <Header />
           <Switch>
             <Route exact path="/login" component={Login} />
             <Route exact path="/profile" component={Profile} />
